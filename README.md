@@ -9,6 +9,20 @@ A simulation that models fear as an overarching motivational system for species 
 
 See `FEAR.md` for the theoretical background across neurology, psychology, sociology, and philosophy.
 
+## Definition of Fear
+
+In this project, **fear** encompasses a broad spectrum of emotional and physiological responses to perceived threats or uncertainty. This ranges from:
+
+- **Mild unease**: A subtle strange feeling in the stomach, a sense that something isn't quite right
+- **Anxiety**: Persistent, future-oriented worry about potential or uncertain threats
+- **Dread**: Intense anticipatory apprehension about something expected or looming, involving a sense of inevitability
+- **Acute fear**: Immediate emotional response to a clear, present danger
+- **Panic**: Sudden, overwhelming fear reaction with strong physiological symptoms, often without a clearly defined external trigger
+- **Terror**: Extreme, catastrophic fear state at the moment of peak threat or confrontation
+- **Phobia**: Intense, often irrational fear of specific objects, situations, or outcomes
+
+Fear is not limited to extreme reactions. It includes all levels of threat perception and discomfort that motivate organisms to take protective or preventive action. This definition acknowledges that fear operates on a continuum, from barely noticeable bodily sensations to overwhelming psychological states that can dominate behavior.
+
 ## Concept: Fear as an Overarching System
 
 ### The Two Main Drivers of Species Preservation
