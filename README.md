@@ -3,173 +3,215 @@ SPDX-License-Identifier: BSD-2-Clause
 Copyright (c) 2026, Timo Pallach (timo@pallach.de).
 -->
 
-# Fear-Driven Simulator
+# Fear: A Multidisciplinary Overview
 
-A simulation that models fear as an overarching motivational system for species preservation.
+This document summarizes fear from four perspectives: neurology/medicine,
+psychology, sociology, and philosophy. The goal is to provide a clear conceptual
+grounding for the simulation model while keeping terminology consistent, without
+reducing fear to any single discipline.
 
-See `FEAR.md` for the theoretical background across neurology, psychology, sociology, and philosophy.
+## 1) Neurology / Medical Perspective
 
-## Definition of Fear
+From a medical viewpoint, fear is a neurobiological response that involves
+sensory processing, threat evaluation, autonomic activation, and learning. It
+is adaptive when proportional to threat and dysfunctional when chronic,
+excessive, or generalized.
 
-In this project, **fear** encompasses a broad spectrum of emotional and physiological responses to perceived threats or uncertainty. This ranges from:
+### Threat processing pathway (simplified)
 
-- **Mild unease**: A subtle strange feeling in the stomach, a sense that something isn't quite right
-- **Anxiety**: Persistent, future-oriented worry about potential or uncertain threats
-- **Dread**: Intense anticipatory apprehension about something expected or looming, involving a sense of inevitability
-- **Acute fear**: Immediate emotional response to a clear, present danger
-- **Panic**: Sudden, overwhelming fear reaction with strong physiological symptoms, often without a clearly defined external trigger
-- **Terror**: Extreme, catastrophic fear state at the moment of peak threat or confrontation
-- **Phobia**: Intense, often irrational fear of specific objects, situations, or outcomes
+- **Sensory input**: signals from the body and environment.
+- **Rapid appraisal**: fast threat detection for immediate response.
+- **Context appraisal**: slower evaluation using memory and context.
+- **Response selection**: defensive behavior (freeze, flight, fight).
+- **Learning update**: memory consolidation of threat associations.
 
-Fear is not limited to extreme reactions. It includes all levels of threat perception and discomfort that motivate organisms to take protective or preventive action. This definition acknowledges that fear operates on a continuum, from barely noticeable bodily sensations to overwhelming psychological states that can dominate behavior.
+### Core brain systems
 
-## Concept: Fear as an Overarching System
+- **Amygdala**: rapid threat detection and fear conditioning.
+- **Hippocampus**: contextual memory (where and when threats occurred).
+- **Prefrontal cortex**: regulation and reappraisal of fear responses.
+- **Periaqueductal gray**: defensive behaviors (freeze, flight, fight).
+- **Hypothalamus**: coordinates autonomic and endocrine responses.
+- **Insula**: interoception, awareness of bodily states and anxiety.
+- **Anterior cingulate cortex**: conflict monitoring, pain, and affect.
 
-### The Two Main Drivers of Species Preservation
+### Autonomic and endocrine responses
 
-1. **Fear (self-preservation drive)** - Protects the individual from danger
-2. **Reproductive drive** - Ensures the continuation of genes
+- **Sympathetic activation**: increased heart rate, blood pressure, respiration,
+  and glucose availability.
+- **HPA axis**: hypothalamus -> pituitary -> adrenal cortex -> cortisol release.
+- **Adrenal medulla**: epinephrine and norepinephrine for rapid mobilization.
+- **Parasympathetic rebound**: recovery and return to baseline after threat.
 
-### Fear as a Central Motivational System
+### Neurotransmitters and hormones (simplified)
 
-Fear is not just one drive among many, but an **overarching system** that monitors and amplifies all other basic needs:
+- **Dopamine**: salience and learning; reinforces avoidance of threats.
+- **Serotonin**: modulation of anxiety and impulsivity.
+- **GABA / glutamate**: inhibitory and excitatory balance in fear circuits.
+- **Cortisol**: prolonged stress response and energy regulation.
+- **Noradrenaline**: arousal, vigilance, and attention to threat cues.
 
-#### Fear as a Reaction to Threats Against Basic Needs
+### Acute vs. chronic fear
 
-- **Hunger → Fear**: "What if I can't find food?" → motivates intensive food-seeking
-- **Thirst → Fear**: "What if I can't find water?" → motivates intensive water-seeking
-- **Pain → Fear**: "What if the injury gets worse?" → amplifies pain avoidance
-- **Reproduction → Fear**: "What if my genes aren't passed on?" → motivates reproductive behavior
+- **Acute fear**: short-lived, high-intensity response to immediate threat.
+- **Chronic fear**: sustained vigilance; disrupts sleep, memory, and health.
+- **Allostatic load**: long-term stress burden that changes physiology.
 
-### Fear as a Motivation Amplifier
+### Clinical aspects
 
-**Without fear:**
-- Hunger → mild discomfort
-- Thirst → mild discomfort
+- **Adaptive fear**: proportional response to real threat; supports survival.
+- **Maladaptive fear**: excessive or persistent fear, e.g., phobias, panic,
+  generalized anxiety.
+- **PTSD**: altered fear learning, hyperarousal, and intrusive memory.
+- **Treatment (overview)**: psychotherapy (e.g., exposure), medication
+  (e.g., SSRIs), and lifestyle interventions that regulate arousal.
 
-**With fear:**
-- Hunger → existential threat → urgent search
-- Thirst → existential threat → urgent search
+## 2) Psychology
 
-Fear increases urgency and prioritizes behavior.
+Psychology treats fear as an adaptive emotion tied to learning, memory, and
+decision processes. It is central to survival but can become maladaptive when
+it dominates behavior or persists in safe contexts.
 
-## Other Important Drives
+### Components of fear
 
-### Primary Drives (Critical for Survival)
-- **Hunger/food drive**: Energy for bodily functions
-- **Thirst**: Water balance, often more urgent than hunger
-- **Pain avoidance**: Protection from injury
-- **Sleep/rest need**: Recovery and energy conservation
+- **Physiological**: arousal, tension, and readiness to act.
+- **Cognitive**: appraisal of danger and probability of harm.
+- **Behavioral**: avoidance, escape, or freezing.
+- **Subjective**: conscious feeling of fear or anxiety.
 
-### Reproductive Drives
-- **Reproductive drive**: Passing on genes
-- **Caregiving drive**: Investment in offspring
+- **Classical conditioning**: neutral stimuli can acquire fear through pairing
+  with threat (e.g., phobias).
+- **Operant learning**: avoidance behavior is reinforced by fear reduction.
+- **Cognitive appraisal**: interpretation of risk shapes fear intensity.
+- **Attention bias**: fear prioritizes threat detection and vigilance.
+- **Behavioral trade-offs**: fear competes with hunger, reproduction, and other
+  drives depending on urgency.
 
-### Social Drives
-- **Social drive**: Group belonging and protection
-- **Aggression/competition drive**: Defense of resources
-- **Territoriality**: Securing resources
+### Fear vs. anxiety
 
-### Developmental/Learning Drives
-- **Curiosity/learning**: Exploration and adaptation
-- **Play drive**: Skill development
+- **Fear**: response to immediate, identifiable threat.
+- **Anxiety**: response to uncertain, anticipated, or ambiguous threat.
+- **Trait vs. state**: individual differences in baseline anxiety.
 
-## Hierarchy of Drives
+### Coping and regulation
 
-### Fear as an Overarching System
+- **Reappraisal**: changing interpretation to reduce fear.
+- **Exposure**: learning safety through repeated non-harmful encounters.
+- **Habituation**: reduced response after repeated benign exposure.
 
-```
-Fear (overarching)
-  ├─ Fear of hunger → food-seeking
-  ├─ Fear of thirst → water-seeking
-  ├─ Fear of pain → avoidance
-  ├─ Fear of death → self-preservation
-  └─ Fear of extinction → reproduction
-```
+### Developmental factors
 
-### Prioritization
+- **Early learning**: caregiver behavior influences fear calibration.
+- **Sensitive periods**: childhood and adolescence shape threat responses.
+- **Social learning**: fear acquired via observation and instruction.
 
-**Critical for survival (immediate):**
-- Breathing
-- Pain avoidance
-- Escape from immediate danger
+## 3) Sociology
 
-**Short-term (days):**
-- Thirst
-- Hunger
-- Sleep
+From a sociological angle, fear is both a personal experience and a social
+phenomenon shaped by culture, institutions, and collective narratives.
 
-**Medium-term (weeks/months):**
-- Reproduction
-- Social bonds
-- Territory
+- **Culture and norms**: societies teach what to fear and how to express fear.
+- **Collective fear**: shared anxieties shape public behavior and policy.
+- **Media and amplification**: focus on dramatic risks can inflate perceived
+  threat beyond statistical reality.
+- **Risk society**: modern societies are organized around managing systemic
+  risks, which normalizes fear-based decision-making.
+- **Social stratification**: fear is unequally distributed across social groups.
 
-**Long-term (years/generations):**
-- Learning and adaptation
-- Innovation
-- Evolutionary change
+### Institutions and governance
 
-## Interactions and Conflicts
+- **Security and policing**: fear influences surveillance, regulation, and law.
+- **Public health**: risk communication can reduce or increase fear.
+- **Economy and labor**: fear of loss shapes work and consumption patterns.
 
-Different drives can conflict:
+### Collective behavior
 
-- **Hunger vs. fear**: Seek food despite danger?
-- **Reproduction vs. self-preservation**: Risk for a mate?
-- **Social drive vs. competition**: Cooperation or conflict?
-- **Curiosity vs. fear**: Explore or avoid?
+- **Moral panics**: rapid spread of fear leading to disproportionate response.
+- **Scapegoating**: fear can be redirected toward out-groups.
+- **Solidarity**: shared fear can also foster cooperation and mutual aid.
 
-## Modeling for the Simulation
+## 4) Philosophy
 
-### Fear as a Central System
+Fear is often discussed as a fundamental human condition rather than merely an
+emotion. Philosophical treatments emphasize meaning, freedom, and the human
+relationship to uncertainty.
 
-```
-Fear-Level = f(
-  Hunger-Threat,
-  Thirst-Threat,
-  Pain-Threat,
-  Reproductive-Threat,
-  Social-Threat
-)
+- **Existential perspective**: fear reveals finitude and mortality, shaping
+  meaning and purpose.
+- **Ethics and decision-making**: fear alters risk perception and can guide or
+  distort moral choices.
+- **Rational vs. irrational fear**: distinction between fear grounded in real
+  threats and fear driven by imagination or misinformation.
+- **Power and social control**: fear can be used to shape compliance, order, and
+  authority.
 
-Behavior = f(Fear-Level, specific drive)
-```
+### Philosophical traditions (with key thinkers)
 
-### Fear as an Amplifier
+- **Stoicism** (Epictetus, Seneca, Marcus Aurelius): fear diminishes when
+  attention is restricted to what is within one's control.
+- **Existentialism** (Kierkegaard, Heidegger, Sartre): anxiety exposes freedom,
+  responsibility, and the burden of choice in an uncertain world.
+- **Political philosophy** (Hobbes, Locke, Rousseau): fear and security shape
+  social contracts, legitimacy, and the role of the state.
+- **Spinoza**: fear arises from inadequate understanding and uncertainty; reason
+  reduces fear by increasing clarity of causes.
+- **Aristotle**: fear is an emotion tied to perceived future harm; courage is a
+  virtue that moderates fear rather than eliminates it.
 
-```
-Motivation = BaseDrive × (1 + Fear-Multiplier)
-```
+### Implications for modeling
 
-### Fear as a Prioritizer
+- Fear can be treated as both a **signal of threat** and a **value-laden
+  interpretation** of that threat.
+- Any simulation should distinguish **immediate danger** from **anticipated
+  risk**, and allow for **learning** and **context**.
 
-Fear evaluates all threats, selects the greatest one, and activates corresponding behavior.
+## References (Wikipedia)
 
-## Scientific Foundations
+### Neurology / Medical
 
-- **Evolutionary psychology**: These drives are shaped by natural selection
-- **Behavioral ecology**: Cost-benefit trade-offs between survival and reproduction
-- **Life history theory**: Trade-offs between investment in survival vs. reproduction
+- Fear: https://en.wikipedia.org/wiki/Fear
+- Amygdala: https://en.wikipedia.org/wiki/Amygdala
+- Hippocampus: https://en.wikipedia.org/wiki/Hippocampus
+- Prefrontal cortex: https://en.wikipedia.org/wiki/Prefrontal_cortex
+- Periaqueductal gray: https://en.wikipedia.org/wiki/Periaqueductal_gray
+- Hypothalamus: https://en.wikipedia.org/wiki/Hypothalamus
+- Insular cortex: https://en.wikipedia.org/wiki/Insular_cortex
+- Anterior cingulate cortex: https://en.wikipedia.org/wiki/Anterior_cingulate_cortex
+- Sympathetic nervous system: https://en.wikipedia.org/wiki/Sympathetic_nervous_system
+- HPA axis: https://en.wikipedia.org/wiki/Hypothalamic%E2%80%93pituitary%E2%80%93adrenal_axis
+- Cortisol: https://en.wikipedia.org/wiki/Cortisol
+- Noradrenaline: https://en.wikipedia.org/wiki/Norepinephrine
+- Post-traumatic stress disorder: https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder
 
-## Neurobiological Mapping (High-Level)
+### Psychology
 
-This project uses behavioral abstractions. A neurobiological mapping would relate those abstractions to brain systems and signals:
+- Classical conditioning: https://en.wikipedia.org/wiki/Classical_conditioning
+- Operant conditioning: https://en.wikipedia.org/wiki/Operant_conditioning
+- Cognitive appraisal theory: https://en.wikipedia.org/wiki/Appraisal_theory
+- Attention bias: https://en.wikipedia.org/wiki/Attentional_bias
+- Anxiety: https://en.wikipedia.org/wiki/Anxiety
+- Exposure therapy: https://en.wikipedia.org/wiki/Exposure_therapy
+- Habituation: https://en.wikipedia.org/wiki/Habituation
 
-- **Threat detection / fear**: amygdala, periaqueductal gray, and the HPA axis (stress response)
-- **Homeostatic needs (hunger, thirst)**: hypothalamus, brainstem nuclei, and hormonal signals (e.g., ghrelin, vasopressin)
-- **Pain avoidance**: spinal nociceptive pathways, thalamus, anterior cingulate cortex
-- **Motivation / reward**: dopamine systems (ventral tegmental area, nucleus accumbens)
-- **Social and caregiving drives**: oxytocin/vasopressin systems, limbic circuits
+### Sociology
 
-These are simplified associations to guide future extensions of the model.
+- Risk society: https://en.wikipedia.org/wiki/Risk_society
+- Moral panic: https://en.wikipedia.org/wiki/Moral_panic
+- Scapegoating: https://en.wikipedia.org/wiki/Scapegoat
+- Social stratification: https://en.wikipedia.org/wiki/Social_stratification
 
-## Conclusion
+### Philosophy
 
-Fear can be understood as an overarching system that:
-1. Detects threats to basic needs
-2. Amplifies urgency
-3. Prioritizes behavior
-4. Triggers emergency responses
-
-The two main drivers are therefore:
-1. **Fear** (overarching motivational system)
-2. **Reproductive drive** (a distinct drive, also amplified by fear)
+- Stoicism: https://en.wikipedia.org/wiki/Stoicism
+- Epictetus: https://en.wikipedia.org/wiki/Epictetus
+- Seneca: https://en.wikipedia.org/wiki/Seneca_the_Younger
+- Marcus Aurelius: https://en.wikipedia.org/wiki/Marcus_Aurelius
+- Existentialism: https://en.wikipedia.org/wiki/Existentialism
+- Kierkegaard: https://en.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard
+- Heidegger: https://en.wikipedia.org/wiki/Martin_Heidegger
+- Sartre: https://en.wikipedia.org/wiki/Jean-Paul_Sartre
+- Hobbes: https://en.wikipedia.org/wiki/Thomas_Hobbes
+- Locke: https://en.wikipedia.org/wiki/John_Locke
+- Rousseau: https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau
+- Spinoza: https://en.wikipedia.org/wiki/Baruch_Spinoza
+- Aristotle: https://en.wikipedia.org/wiki/Aristotle
